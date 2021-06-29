@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import './image_banner.dart';
 import './text_section.dart';
+
 
 class LocationDetail extends StatelessWidget {
   @override
@@ -12,6 +14,7 @@ class LocationDetail extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
+            ImageBanner('assets/images/fortnite.jpg'),
             TextSection(Colors.black), 
           TextSection(Colors.blue), 
           TextSection(Colors.yellow)
