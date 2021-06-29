@@ -15,9 +15,9 @@ class LocationDetail extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             ImageBanner('assets/images/fortnite.jpg'),
-            TextSection(Colors.black), 
-          TextSection(Colors.blue), 
-          TextSection(Colors.yellow)
+            TextSection('Summary 1', 'Something 1'), 
+          TextSection('Summary 2', 'Something 2'), 
+          TextSection('Summary 3', 'Something 3')
           ]
           ),
     );
