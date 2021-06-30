@@ -6,6 +6,7 @@ const bodyTextSize = 16.0;
 
 const String fontNameDefault = 'Montserrat';
 
+// ignore: constant_identifier_names
 const AppBarTextStyle = TextStyle(
   fontFamily: fontNameDefault,
   fontWeight: FontWeight.w300,
@@ -13,6 +14,7 @@ const AppBarTextStyle = TextStyle(
   color: Colors.white
 );
 
+// ignore: constant_identifier_names
 const TitleTextStyle = TextStyle(
   fontFamily: fontNameDefault,
   fontWeight: FontWeight.w300,
@@ -20,6 +22,7 @@ const TitleTextStyle = TextStyle(
   color: Colors.black
 );
 
+// ignore: constant_identifier_names
 const BodyText2Style = TextStyle(
   fontFamily: fontNameDefault,
   fontWeight: FontWeight.w300,

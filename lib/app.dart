@@ -3,7 +3,6 @@ import 'screens/location_detail/location_detail.dart';
 import './style.dart';
 
 class App extends StatelessWidget {
-  
 
   @override
   Widget build(BuildContext context) {
