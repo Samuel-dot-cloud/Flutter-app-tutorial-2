@@ -5,20 +5,23 @@ import '../../models/location.dart';
 
 // ignore: use_key_in_widget_constructors
 class LocationDetail extends StatelessWidget {
+  final int _locationID;
+
+  LocationDetail(this._locationID);
+
   @override
   Widget build(BuildContext context) {
-    final locations = Location.fetchAll();
-    final location = locations.first;
+    final location = Location.fetchByID(_locationID);
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(location.name),
+        title: Text(location!.name),
       ),
       body: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            ImageBanner(location.imagePath), 
+            ImageBanner(location.imagePath),
             ...textSections(location),
           ]),
     );
